@@ -1,0 +1,82 @@
+Quartus II
+Version 10.0 Build 218 06/27/2010 SJ Web Edition
+13
+1247
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+debounce
+# storage
+db|B0729056_LAB02.(1).cnf
+db|B0729056_LAB02.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|altera|10.0|debounce|debounce.v
+4a7a41c14732e6b3ff958fe5cecd689
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+divn_num
+5000000
+PARAMETER_SIGNED_DEC
+USR
+}
+# macro_sequence
+
+# end
+# entity
+B0729056_LAB02
+# storage
+db|B0729056_LAB02.(0).cnf
+db|B0729056_LAB02.(0).cnf
+# case_insensitive
+# source_file
+b0729056_lab02.bdf
+68b896388cad1e7df0602c97593f4df
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+
