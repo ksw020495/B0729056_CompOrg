@@ -1,0 +1,54 @@
+m255
+K3
+13
+cModel Technology
+dC:\altera\10.0
+v\7447 
+I[40bTLZLi?5gofnPU>W5F2
+VG47bPYf8kDea_=^QHk8;l0
+Z0 dC:\altera\10.0\lab05
+w1572606691
+8C:/altera/10.0/lab05/7447.v
+FC:/altera/10.0/lab05/7447.v
+L0 19
+Z1 OV;L;6.5e;42
+r1
+31
+Z2 !s102 -nocovercells
+Z3 o-work work -nocovercells -O0
+n@1347447@040
+!s100 S_`aRn`E<4VHz?J5cfk`_2
+!s85 0
+!s101 -O0
+vlab05
+!s100 REWmI0oQcF1LmGnST8Be30
+IVYD?XP^@80eoZanAJfFIR3
+VONF^`n2hQgAFl^^GCRHIb0
+Z4 dC:\altera\10.0\lab05
+w1572607857
+8C:/altera/10.0/lab05/lab05.v
+FC:/altera/10.0/lab05/lab05.v
+L0 19
+R1
+r1
+!s85 0
+31
+!s101 -O0
+R2
+R3
+vtb
+I7C5bi1]jJE9_8dgZ0n_CV1
+VV@Xn<HnSRM[I5c1?BH]3a3
+R4
+w1572608103
+8C:/altera/10.0/lab05/tb.v
+FC:/altera/10.0/lab05/tb.v
+L0 14
+R1
+r1
+31
+R2
+R3
+!s100 d^o6hmP3o;ZeSBez^e6AX0
+!s85 0
+!s101 -O0

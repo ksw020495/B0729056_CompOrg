@@ -1,0 +1,500 @@
+// Copyright (C) 1991-2010 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// PROGRAM		"Quartus II"
+// VERSION		"Version 10.0 Build 218 06/27/2010 SJ Web Edition"
+// CREATED		"Fri Nov 01 19:30:57 2019"
+
+module lab05(
+	Count,
+	clk,
+	clean,
+	Q0A,
+	Q0B,
+	Q0C,
+	Q0D,
+	Q0E,
+	Q0F,
+	Q0G,
+	Q1A,
+	Q1B,
+	Q1C,
+	Q1D,
+	Q1E,
+	Q1F,
+	Q1G,
+	Q2A,
+	Q2B,
+	Q2C,
+	Q2D,
+	Q2E,
+	Q2F,
+	Q2G,
+	Q3A,
+	Q3B,
+	Q3C,
+	Q3D,
+	Q3E,
+	Q3F,
+	Q3G
+);
+
+
+input wire	Count;
+input wire	clk;
+input wire	clean;
+output wire	Q0A;
+output wire	Q0B;
+output wire	Q0C;
+output wire	Q0D;
+output wire	Q0E;
+output wire	Q0F;
+output wire	Q0G;
+output wire	Q1A;
+output wire	Q1B;
+output wire	Q1C;
+output wire	Q1D;
+output wire	Q1E;
+output wire	Q1F;
+output wire	Q1G;
+output wire	Q2A;
+output wire	Q2B;
+output wire	Q2C;
+output wire	Q2D;
+output wire	Q2E;
+output wire	Q2F;
+output wire	Q2G;
+output wire	Q3A;
+output wire	Q3B;
+output wire	Q3C;
+output wire	Q3D;
+output wire	Q3E;
+output wire	Q3F;
+output wire	Q3G;
+
+reg	SYNTHESIZED_WIRE_73;
+wire	SYNTHESIZED_WIRE_0;
+wire	SYNTHESIZED_WIRE_74;
+reg	SYNTHESIZED_WIRE_75;
+wire	SYNTHESIZED_WIRE_76;
+wire	SYNTHESIZED_WIRE_3;
+wire	SYNTHESIZED_WIRE_5;
+wire	SYNTHESIZED_WIRE_7;
+reg	SYNTHESIZED_WIRE_77;
+wire	SYNTHESIZED_WIRE_78;
+reg	SYNTHESIZED_WIRE_79;
+wire	SYNTHESIZED_WIRE_80;
+reg	SYNTHESIZED_WIRE_81;
+wire	SYNTHESIZED_WIRE_10;
+wire	SYNTHESIZED_WIRE_13;
+reg	SYNTHESIZED_WIRE_82;
+reg	SYNTHESIZED_WIRE_83;
+reg	SYNTHESIZED_WIRE_84;
+reg	SYNTHESIZED_WIRE_85;
+reg	SYNTHESIZED_WIRE_86;
+reg	SYNTHESIZED_WIRE_87;
+reg	SYNTHESIZED_WIRE_88;
+reg	SYNTHESIZED_WIRE_89;
+reg	SYNTHESIZED_WIRE_90;
+wire	SYNTHESIZED_WIRE_14;
+wire	SYNTHESIZED_WIRE_91;
+wire	SYNTHESIZED_WIRE_16;
+wire	SYNTHESIZED_WIRE_18;
+wire	SYNTHESIZED_WIRE_20;
+wire	SYNTHESIZED_WIRE_92;
+wire	SYNTHESIZED_WIRE_23;
+wire	SYNTHESIZED_WIRE_25;
+wire	SYNTHESIZED_WIRE_27;
+wire	SYNTHESIZED_WIRE_29;
+wire	SYNTHESIZED_WIRE_93;
+wire	SYNTHESIZED_WIRE_94;
+wire	SYNTHESIZED_WIRE_32;
+wire	SYNTHESIZED_WIRE_36;
+wire	SYNTHESIZED_WIRE_95;
+wire	SYNTHESIZED_WIRE_38;
+wire	SYNTHESIZED_WIRE_40;
+wire	SYNTHESIZED_WIRE_42;
+wire	SYNTHESIZED_WIRE_96;
+wire	SYNTHESIZED_WIRE_97;
+wire	SYNTHESIZED_WIRE_45;
+wire	SYNTHESIZED_WIRE_48;
+wire	SYNTHESIZED_WIRE_49;
+wire	SYNTHESIZED_WIRE_50;
+wire	SYNTHESIZED_WIRE_98;
+wire	SYNTHESIZED_WIRE_53;
+wire	SYNTHESIZED_WIRE_55;
+wire	SYNTHESIZED_WIRE_57;
+wire	SYNTHESIZED_WIRE_59;
+wire	SYNTHESIZED_WIRE_99;
+wire	SYNTHESIZED_WIRE_100;
+wire	SYNTHESIZED_WIRE_101;
+wire	SYNTHESIZED_WIRE_63;
+wire	SYNTHESIZED_WIRE_67;
+wire	SYNTHESIZED_WIRE_102;
+wire	SYNTHESIZED_WIRE_70;
+wire	SYNTHESIZED_WIRE_71;
+
+
+
+
+assign	SYNTHESIZED_WIRE_14 = ~(SYNTHESIZED_WIRE_73 & SYNTHESIZED_WIRE_0 & SYNTHESIZED_WIRE_74 & SYNTHESIZED_WIRE_75);
+
+
+always@(posedge clk or negedge SYNTHESIZED_WIRE_76)
+begin
+if (!SYNTHESIZED_WIRE_76)
+	begin
+	SYNTHESIZED_WIRE_77 = 0;
+	end
+else
+	begin
+	SYNTHESIZED_WIRE_77 = SYNTHESIZED_WIRE_3;
+	end
+end
+
+
+always@(posedge clk or negedge SYNTHESIZED_WIRE_76)
+begin
+if (!SYNTHESIZED_WIRE_76)
+	begin
+	SYNTHESIZED_WIRE_79 = 0;
+	end
+else
+	begin
+	SYNTHESIZED_WIRE_79 = SYNTHESIZED_WIRE_5;
+	end
+end
+
+
+always@(posedge clk or negedge SYNTHESIZED_WIRE_76)
+begin
+if (!SYNTHESIZED_WIRE_76)
+	begin
+	SYNTHESIZED_WIRE_81 = 0;
+	end
+else
+	begin
+	SYNTHESIZED_WIRE_81 = SYNTHESIZED_WIRE_7;
+	end
+end
+
+assign	SYNTHESIZED_WIRE_3 = SYNTHESIZED_WIRE_77 ^ SYNTHESIZED_WIRE_78;
+
+assign	SYNTHESIZED_WIRE_5 = SYNTHESIZED_WIRE_79 ^ SYNTHESIZED_WIRE_80;
+
+assign	SYNTHESIZED_WIRE_7 = SYNTHESIZED_WIRE_81 ^ SYNTHESIZED_WIRE_10;
+
+assign	SYNTHESIZED_WIRE_80 = SYNTHESIZED_WIRE_77 & SYNTHESIZED_WIRE_78;
+
+assign	SYNTHESIZED_WIRE_10 = SYNTHESIZED_WIRE_80 & SYNTHESIZED_WIRE_79;
+
+assign	SYNTHESIZED_WIRE_20 = ~(SYNTHESIZED_WIRE_13 & SYNTHESIZED_WIRE_79 & SYNTHESIZED_WIRE_81);
+
+assign	SYNTHESIZED_WIRE_13 =  ~SYNTHESIZED_WIRE_77;
+
+
+\7447 	b2v_inst112(
+	
+	.B(SYNTHESIZED_WIRE_75),
+	.C(SYNTHESIZED_WIRE_82),
+	.D(SYNTHESIZED_WIRE_73),
+	
+	
+	.A(SYNTHESIZED_WIRE_83),
+	.OB(Q0B),
+	.OC(Q0C),
+	.OE(Q0E),
+	.OD(Q0D),
+	.OF(Q0F),
+	.OG(Q0G),
+	.OA(Q0A)
+	);
+
+
+\7447 	b2v_inst113(
+	
+	.B(SYNTHESIZED_WIRE_84),
+	.C(SYNTHESIZED_WIRE_85),
+	
+	
+	
+	.A(SYNTHESIZED_WIRE_86),
+	.OB(Q1B),
+	.OC(Q1C),
+	.OE(Q1E),
+	.OD(Q1D),
+	.OF(Q1F),
+	.OG(Q1G),
+	.OA(Q1A)
+	);
+
+
+\7447 	b2v_inst115(
+	
+	.B(SYNTHESIZED_WIRE_87),
+	.C(SYNTHESIZED_WIRE_88),
+	.D(SYNTHESIZED_WIRE_89),
+	
+	
+	.A(SYNTHESIZED_WIRE_90),
+	.OB(Q2B),
+	.OC(Q2C),
+	.OE(Q2E),
+	.OD(Q2D),
+	.OF(Q2F),
+	.OG(Q2G),
+	.OA(Q2A)
+	);
+
+
+\7447 	b2v_inst116(
+	
+	.B(SYNTHESIZED_WIRE_79),
+	.C(SYNTHESIZED_WIRE_81),
+	
+	
+	
+	.A(SYNTHESIZED_WIRE_77),
+	.OB(Q3B),
+	.OC(Q3C),
+	.OE(Q3E),
+	.OD(Q3D),
+	.OF(Q3F),
+	.OG(Q3G),
+	.OA(Q3A)
+	);
+
+assign	SYNTHESIZED_WIRE_91 =  ~clean;
+
+assign	SYNTHESIZED_WIRE_92 = SYNTHESIZED_WIRE_14 & SYNTHESIZED_WIRE_91;
+
+assign	SYNTHESIZED_WIRE_95 = SYNTHESIZED_WIRE_16 & SYNTHESIZED_WIRE_91;
+
+assign	SYNTHESIZED_WIRE_98 = SYNTHESIZED_WIRE_18 & SYNTHESIZED_WIRE_91;
+
+assign	SYNTHESIZED_WIRE_76 = SYNTHESIZED_WIRE_20 & SYNTHESIZED_WIRE_91;
+
+
+always@(posedge clk or negedge SYNTHESIZED_WIRE_92)
+begin
+if (!SYNTHESIZED_WIRE_92)
+	begin
+	SYNTHESIZED_WIRE_83 = 0;
+	end
+else
+	begin
+	SYNTHESIZED_WIRE_83 = SYNTHESIZED_WIRE_23;
+	end
+end
+
+
+always@(posedge clk or negedge SYNTHESIZED_WIRE_92)
+begin
+if (!SYNTHESIZED_WIRE_92)
+	begin
+	SYNTHESIZED_WIRE_75 = 0;
+	end
+else
+	begin
+	SYNTHESIZED_WIRE_75 = SYNTHESIZED_WIRE_25;
+	end
+end
+
+
+always@(posedge clk or negedge SYNTHESIZED_WIRE_92)
+begin
+if (!SYNTHESIZED_WIRE_92)
+	begin
+	SYNTHESIZED_WIRE_82 = 0;
+	end
+else
+	begin
+	SYNTHESIZED_WIRE_82 = SYNTHESIZED_WIRE_27;
+	end
+end
+
+
+always@(posedge clk or negedge SYNTHESIZED_WIRE_92)
+begin
+if (!SYNTHESIZED_WIRE_92)
+	begin
+	SYNTHESIZED_WIRE_73 = 0;
+	end
+else
+	begin
+	SYNTHESIZED_WIRE_73 = SYNTHESIZED_WIRE_29;
+	end
+end
+
+assign	SYNTHESIZED_WIRE_23 = SYNTHESIZED_WIRE_83 ^ Count;
+
+assign	SYNTHESIZED_WIRE_25 = SYNTHESIZED_WIRE_75 ^ SYNTHESIZED_WIRE_93;
+
+assign	SYNTHESIZED_WIRE_27 = SYNTHESIZED_WIRE_82 ^ SYNTHESIZED_WIRE_94;
+
+assign	SYNTHESIZED_WIRE_29 = SYNTHESIZED_WIRE_73 ^ SYNTHESIZED_WIRE_32;
+
+assign	SYNTHESIZED_WIRE_93 = SYNTHESIZED_WIRE_83 & Count;
+
+assign	SYNTHESIZED_WIRE_94 = SYNTHESIZED_WIRE_75 & SYNTHESIZED_WIRE_93;
+
+assign	SYNTHESIZED_WIRE_32 = SYNTHESIZED_WIRE_94 & SYNTHESIZED_WIRE_82;
+
+assign	SYNTHESIZED_WIRE_74 =  ~SYNTHESIZED_WIRE_82;
+
+assign	SYNTHESIZED_WIRE_36 =  ~SYNTHESIZED_WIRE_75;
+
+assign	SYNTHESIZED_WIRE_0 =  ~SYNTHESIZED_WIRE_83;
+
+assign	SYNTHESIZED_WIRE_96 = SYNTHESIZED_WIRE_73 & SYNTHESIZED_WIRE_74 & SYNTHESIZED_WIRE_36 & SYNTHESIZED_WIRE_83;
+
+
+always@(posedge clk or negedge SYNTHESIZED_WIRE_95)
+begin
+if (!SYNTHESIZED_WIRE_95)
+	begin
+	SYNTHESIZED_WIRE_86 = 0;
+	end
+else
+	begin
+	SYNTHESIZED_WIRE_86 = SYNTHESIZED_WIRE_38;
+	end
+end
+
+
+always@(posedge clk or negedge SYNTHESIZED_WIRE_95)
+begin
+if (!SYNTHESIZED_WIRE_95)
+	begin
+	SYNTHESIZED_WIRE_84 = 0;
+	end
+else
+	begin
+	SYNTHESIZED_WIRE_84 = SYNTHESIZED_WIRE_40;
+	end
+end
+
+
+always@(posedge clk or negedge SYNTHESIZED_WIRE_95)
+begin
+if (!SYNTHESIZED_WIRE_95)
+	begin
+	SYNTHESIZED_WIRE_85 = 0;
+	end
+else
+	begin
+	SYNTHESIZED_WIRE_85 = SYNTHESIZED_WIRE_42;
+	end
+end
+
+assign	SYNTHESIZED_WIRE_38 = SYNTHESIZED_WIRE_86 ^ SYNTHESIZED_WIRE_96;
+
+assign	SYNTHESIZED_WIRE_40 = SYNTHESIZED_WIRE_84 ^ SYNTHESIZED_WIRE_97;
+
+assign	SYNTHESIZED_WIRE_42 = SYNTHESIZED_WIRE_85 ^ SYNTHESIZED_WIRE_45;
+
+assign	SYNTHESIZED_WIRE_97 = SYNTHESIZED_WIRE_86 & SYNTHESIZED_WIRE_96;
+
+assign	SYNTHESIZED_WIRE_45 = SYNTHESIZED_WIRE_84 & SYNTHESIZED_WIRE_97;
+
+assign	SYNTHESIZED_WIRE_48 =  ~SYNTHESIZED_WIRE_86;
+
+assign	SYNTHESIZED_WIRE_49 =  ~SYNTHESIZED_WIRE_84;
+
+assign	SYNTHESIZED_WIRE_16 = ~(SYNTHESIZED_WIRE_85 & SYNTHESIZED_WIRE_84 & SYNTHESIZED_WIRE_48);
+
+assign	SYNTHESIZED_WIRE_50 = SYNTHESIZED_WIRE_85 & SYNTHESIZED_WIRE_49 & SYNTHESIZED_WIRE_86;
+
+assign	SYNTHESIZED_WIRE_99 = SYNTHESIZED_WIRE_50 & SYNTHESIZED_WIRE_96;
+
+
+always@(posedge clk or negedge SYNTHESIZED_WIRE_98)
+begin
+if (!SYNTHESIZED_WIRE_98)
+	begin
+	SYNTHESIZED_WIRE_90 = 0;
+	end
+else
+	begin
+	SYNTHESIZED_WIRE_90 = SYNTHESIZED_WIRE_53;
+	end
+end
+
+
+always@(posedge clk or negedge SYNTHESIZED_WIRE_98)
+begin
+if (!SYNTHESIZED_WIRE_98)
+	begin
+	SYNTHESIZED_WIRE_87 = 0;
+	end
+else
+	begin
+	SYNTHESIZED_WIRE_87 = SYNTHESIZED_WIRE_55;
+	end
+end
+
+
+always@(posedge clk or negedge SYNTHESIZED_WIRE_98)
+begin
+if (!SYNTHESIZED_WIRE_98)
+	begin
+	SYNTHESIZED_WIRE_88 = 0;
+	end
+else
+	begin
+	SYNTHESIZED_WIRE_88 = SYNTHESIZED_WIRE_57;
+	end
+end
+
+
+always@(posedge clk or negedge SYNTHESIZED_WIRE_98)
+begin
+if (!SYNTHESIZED_WIRE_98)
+	begin
+	SYNTHESIZED_WIRE_89 = 0;
+	end
+else
+	begin
+	SYNTHESIZED_WIRE_89 = SYNTHESIZED_WIRE_59;
+	end
+end
+
+assign	SYNTHESIZED_WIRE_53 = SYNTHESIZED_WIRE_90 ^ SYNTHESIZED_WIRE_99;
+
+assign	SYNTHESIZED_WIRE_55 = SYNTHESIZED_WIRE_87 ^ SYNTHESIZED_WIRE_100;
+
+assign	SYNTHESIZED_WIRE_57 = SYNTHESIZED_WIRE_88 ^ SYNTHESIZED_WIRE_101;
+
+assign	SYNTHESIZED_WIRE_59 = SYNTHESIZED_WIRE_89 ^ SYNTHESIZED_WIRE_63;
+
+assign	SYNTHESIZED_WIRE_63 = SYNTHESIZED_WIRE_88 & SYNTHESIZED_WIRE_101;
+
+assign	SYNTHESIZED_WIRE_101 = SYNTHESIZED_WIRE_87 & SYNTHESIZED_WIRE_100;
+
+assign	SYNTHESIZED_WIRE_100 = SYNTHESIZED_WIRE_90 & SYNTHESIZED_WIRE_99;
+
+assign	SYNTHESIZED_WIRE_18 = ~(SYNTHESIZED_WIRE_89 & SYNTHESIZED_WIRE_67 & SYNTHESIZED_WIRE_102 & SYNTHESIZED_WIRE_87);
+
+assign	SYNTHESIZED_WIRE_102 =  ~SYNTHESIZED_WIRE_88;
+
+assign	SYNTHESIZED_WIRE_70 =  ~SYNTHESIZED_WIRE_87;
+
+assign	SYNTHESIZED_WIRE_67 =  ~SYNTHESIZED_WIRE_90;
+
+assign	SYNTHESIZED_WIRE_71 = SYNTHESIZED_WIRE_89 & SYNTHESIZED_WIRE_102 & SYNTHESIZED_WIRE_70 & SYNTHESIZED_WIRE_90;
+
+assign	SYNTHESIZED_WIRE_78 = SYNTHESIZED_WIRE_71 & SYNTHESIZED_WIRE_99;
+
+
+endmodule
