@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat Nov 23 00:50:15 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : midterm
+Top-level Entity Name : midterm
+Family : Cyclone IV E
+Total logic elements : 128
+    Total combinational functions : 128
+    Dedicated logic registers : 88
+Total registers : 88
+Total pins : 31
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

@@ -1,0 +1,133 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Q0A",
+					"strict" : false
+				},
+				{
+					"name" : "Q0B",
+					"strict" : false
+				},
+				{
+					"name" : "Q0C",
+					"strict" : false
+				},
+				{
+					"name" : "Q0D",
+					"strict" : false
+				},
+				{
+					"name" : "Q0E",
+					"strict" : false
+				},
+				{
+					"name" : "Q0F",
+					"strict" : false
+				},
+				{
+					"name" : "Q0G",
+					"strict" : false
+				},
+				{
+					"name" : "Q1A",
+					"strict" : false
+				},
+				{
+					"name" : "Q1B",
+					"strict" : false
+				},
+				{
+					"name" : "Q1C",
+					"strict" : false
+				},
+				{
+					"name" : "Q1D",
+					"strict" : false
+				},
+				{
+					"name" : "Q1E",
+					"strict" : false
+				},
+				{
+					"name" : "Q1F",
+					"strict" : false
+				},
+				{
+					"name" : "Q1G",
+					"strict" : false
+				},
+				{
+					"name" : "Q2A",
+					"strict" : false
+				},
+				{
+					"name" : "Q2B",
+					"strict" : false
+				},
+				{
+					"name" : "Q2C",
+					"strict" : false
+				},
+				{
+					"name" : "Q2D",
+					"strict" : false
+				},
+				{
+					"name" : "Q2E",
+					"strict" : false
+				},
+				{
+					"name" : "Q2F",
+					"strict" : false
+				},
+				{
+					"name" : "Q2G",
+					"strict" : false
+				},
+				{
+					"name" : "Q3A",
+					"strict" : false
+				},
+				{
+					"name" : "Q3B",
+					"strict" : false
+				},
+				{
+					"name" : "Q3C",
+					"strict" : false
+				},
+				{
+					"name" : "Q3D",
+					"strict" : false
+				},
+				{
+					"name" : "Q3E",
+					"strict" : false
+				},
+				{
+					"name" : "Q3F",
+					"strict" : false
+				},
+				{
+					"name" : "Q3G",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "count",
+					"strict" : false
+				},
+				{
+					"name" : "speed",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

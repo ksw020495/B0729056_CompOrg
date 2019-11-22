@@ -1,0 +1,152 @@
+|midterm
+Q0A <= inst163.DB_MAX_OUTPUT_PORT_TYPE
+clk => freq_div_1KHz:inst198.clk_in
+speed => inst158.CLK
+count => inst159.CLK
+Q0B <= inst164.DB_MAX_OUTPUT_PORT_TYPE
+Q0C <= inst165.DB_MAX_OUTPUT_PORT_TYPE
+Q0D <= inst166.DB_MAX_OUTPUT_PORT_TYPE
+Q0E <= inst167.DB_MAX_OUTPUT_PORT_TYPE
+Q0F <= inst168.DB_MAX_OUTPUT_PORT_TYPE
+Q0G <= inst169.DB_MAX_OUTPUT_PORT_TYPE
+Q1A <= inst170.DB_MAX_OUTPUT_PORT_TYPE
+Q1B <= inst171.DB_MAX_OUTPUT_PORT_TYPE
+Q1C <= inst172.DB_MAX_OUTPUT_PORT_TYPE
+Q1D <= inst173.DB_MAX_OUTPUT_PORT_TYPE
+Q1E <= inst174.DB_MAX_OUTPUT_PORT_TYPE
+Q1F <= inst175.DB_MAX_OUTPUT_PORT_TYPE
+Q1G <= inst176.DB_MAX_OUTPUT_PORT_TYPE
+Q2A <= inst177.DB_MAX_OUTPUT_PORT_TYPE
+Q2B <= inst178.DB_MAX_OUTPUT_PORT_TYPE
+Q2C <= inst179.DB_MAX_OUTPUT_PORT_TYPE
+Q2D <= inst180.DB_MAX_OUTPUT_PORT_TYPE
+Q2E <= inst181.DB_MAX_OUTPUT_PORT_TYPE
+Q2F <= inst182.DB_MAX_OUTPUT_PORT_TYPE
+Q2G <= inst183.DB_MAX_OUTPUT_PORT_TYPE
+Q3A <= inst184.DB_MAX_OUTPUT_PORT_TYPE
+Q3B <= inst185.DB_MAX_OUTPUT_PORT_TYPE
+Q3C <= inst186.DB_MAX_OUTPUT_PORT_TYPE
+Q3D <= inst187.DB_MAX_OUTPUT_PORT_TYPE
+Q3E <= inst188.DB_MAX_OUTPUT_PORT_TYPE
+Q3F <= inst189.DB_MAX_OUTPUT_PORT_TYPE
+Q3G <= inst190.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|midterm|freq_div_1KHz:inst198
+clk_in => clk_out~reg0.CLK
+clk_in => counter[0].CLK
+clk_in => counter[1].CLK
+clk_in => counter[2].CLK
+clk_in => counter[3].CLK
+clk_in => counter[4].CLK
+clk_in => counter[5].CLK
+clk_in => counter[6].CLK
+clk_in => counter[7].CLK
+clk_in => counter[8].CLK
+clk_in => counter[9].CLK
+clk_in => counter[10].CLK
+clk_in => counter[11].CLK
+clk_in => counter[12].CLK
+clk_in => counter[13].CLK
+clk_in => counter[14].CLK
+clk_in => counter[15].CLK
+clk_in => counter[16].CLK
+clk_in => counter[17].CLK
+clk_in => counter[18].CLK
+clk_in => counter[19].CLK
+clk_in => counter[20].CLK
+clk_in => counter[21].CLK
+clk_in => counter[22].CLK
+clk_in => counter[23].CLK
+clk_in => counter[24].CLK
+clk_in => counter[25].CLK
+clk_in => counter[26].CLK
+clk_in => counter[27].CLK
+clk_out <= clk_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => clk_out.OUTPUTSELECT
+
+
+|midterm|seg_7:inst120
+num[0] => Decoder0.IN3
+num[1] => Decoder0.IN2
+num[2] => Decoder0.IN1
+num[3] => Decoder0.IN0
+hex[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+hex[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+hex[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+hex[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+hex[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+hex[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+hex[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|midterm|seg_7:inst121
+num[0] => Decoder0.IN3
+num[1] => Decoder0.IN2
+num[2] => Decoder0.IN1
+num[3] => Decoder0.IN0
+hex[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+hex[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+hex[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+hex[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+hex[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+hex[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+hex[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|midterm|seg_7:inst122
+num[0] => Decoder0.IN3
+num[1] => Decoder0.IN2
+num[2] => Decoder0.IN1
+num[3] => Decoder0.IN0
+hex[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+hex[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+hex[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+hex[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+hex[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+hex[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+hex[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|midterm|seg_7:inst123
+num[0] => Decoder0.IN3
+num[1] => Decoder0.IN2
+num[2] => Decoder0.IN1
+num[3] => Decoder0.IN0
+hex[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+hex[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+hex[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+hex[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+hex[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+hex[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+hex[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
