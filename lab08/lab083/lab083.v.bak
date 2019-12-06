@@ -1,0 +1,21 @@
+module lab083(x, A, notA, B, notB, Y);
+	input X;
+	output A;
+	output notA;
+	output B;
+	output notB;
+	output Y;
+	
+	reg A;
+	reg B;
+	
+	always @(posedge clock) begin
+		A=(A&X)|(B&X);
+		notA=(!A);
+		B=(!A)&X;
+		notB=(!B);
+	end
+	
+	assign Y=(A|B)&(!X);
+	
+endmodule
