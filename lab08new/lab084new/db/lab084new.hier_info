@@ -1,0 +1,10 @@
+|lab084new
+X => Mux1.IN2
+T => Mux0.IN3
+T => Mux1.IN3
+clock => Q0~reg0.CLK
+clock => Q1~reg0.CLK
+Q1 <= Q1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q0 <= Q0~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

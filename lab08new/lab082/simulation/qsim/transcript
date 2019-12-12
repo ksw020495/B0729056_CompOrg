@@ -1,0 +1,33 @@
+# do lab082.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:07:58 on Dec 12,2019
+# vlog -work work lab082.vo 
+# -- Compiling module lab082
+# -- Compiling module hard_block
+# 
+# Top level modules:
+# 	lab082
+# End time: 23:07:58 on Dec 12,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:07:58 on Dec 12,2019
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module lab082_vlg_vec_tst
+# 
+# Top level modules:
+# 	lab082_vlg_vec_tst
+# End time: 23:07:58 on Dec 12,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.lab082_vlg_vec_tst 
+# Start time: 23:08:01 on Dec 12,2019
+# Loading work.lab082_vlg_vec_tst
+# Loading work.lab082
+# Loading work.hard_block
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# after#24
+# ** Note: $finish    : Waveform.vwf.vt(50)
+#    Time: 8 us  Iteration: 0  Instance: /lab082_vlg_vec_tst
+# End time: 23:08:02 on Dec 12,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
