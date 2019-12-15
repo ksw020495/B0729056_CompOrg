@@ -1,0 +1,67 @@
+module lab09(S2,S1,S0,Cin,A,B,clock,G);
+	input [7:0] A;
+	input [7:0] B;
+	input clock;
+	input S2,S1,S0,Cin;
+	output [7:0] G;
+	
+	wire [7:0] arithout;
+	wire [7:0] logout;
+	wire [7:0] ALUout;
+	reg [7:0] G;
+	
+	alway@(*) begin
+		case({S1,S0,Cin})
+			3'b000:
+			begin
+				arithout=A;
+				logout=A&B;
+			end
+			3'b001:
+			begin
+				arithout=A+1;
+				logout=A|B;
+			end
+			3'b010:
+			begin
+				arithout=A+B;
+				logout=A^B;
+			end
+			3'b011:
+			begin
+				arithout=A+B+1;
+				logout=!A;
+			end
+			3'b100:
+			begin
+				arithout=A-B-1;
+				logout=A&B;
+			end
+			3'b101:
+			begin
+				arithout=A-B;
+				logout=A|B;
+			end
+			3'b110:
+			begin
+				arithout=A-1;
+				logout=A^B;
+			end
+			3'b111:
+			begin
+				arithout=A;
+				logout=!A;
+			end
+		endcase
+	end
+	
+	always@(*) begin
+		case(S2)
+			1'b1: ALUout=logout;
+			1'b0: ALUout=arithout;
+	end
+	
+	always@(posedge clock) begin
+		G=ALUout;
+	end
+end

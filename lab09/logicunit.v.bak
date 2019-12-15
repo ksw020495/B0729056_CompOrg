@@ -1,0 +1,29 @@
+module logicunitarithmeticunit(A,B,S0,Cin,Lout);
+	input [7:0] A;
+	input [7:0] B;
+	input S0,Cin;
+	output [7:0] Lout;
+	
+	reg [7:0] Lout;
+	
+	always@(*) begin
+		case({S0,Cin})
+			2'b00:
+			begin
+				assign Lout=A&B;
+			end
+			2'b01:
+			begin
+				assign Lout=A|B;
+			end
+			2'b10:
+			begin
+				assign Lout=A^B;
+			end
+			2'b11:
+			begin
+				assign Lout=!A;
+			end
+		endcase
+	end
+endmodule

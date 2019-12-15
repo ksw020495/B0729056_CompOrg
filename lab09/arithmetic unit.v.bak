@@ -1,0 +1,42 @@
+module arithmeticunit(A,B,S1,S0,Cin,Aout);
+	input [7:0] A;
+	input [7:0] B;
+	input S1,S0,Cin;
+	output [7:0] Aout;
+	
+	always@(*) begin
+		case({S1,S0,Cin})
+			3'b000:
+			begin
+				Aout=A;
+			end
+			3'b001:
+			begin
+				Aout=A+1;
+			end
+			3'b010:
+			begin
+				Aout=A+B;
+			end
+			3'b011:
+			begin
+				Aout=A+B+1;
+			end
+			3'b100:
+			begin
+				Aout=A-B-1;
+			end
+			3'b101:
+			begin
+				Aout=A-B;
+			end
+			3'b110:
+			begin
+				Aout=A-1;
+			end
+			3'b:
+			begin
+				Aout=A;
+			end
+		endcase
+	end
