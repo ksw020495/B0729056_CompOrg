@@ -1,0 +1,514 @@
+Analysis & Synthesis report for Final
+Fri Jan 10 03:21:52 2020
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: register:R0
+ 12. Parameter Settings for User Entity Instance: register:R1
+ 13. Parameter Settings for User Entity Instance: register:R2
+ 14. Parameter Settings for User Entity Instance: register:R3
+ 15. Parameter Settings for User Entity Instance: mux_2:MUXB
+ 16. Parameter Settings for User Entity Instance: ALU:_ALU|arthimetic:Ari|adder:ADDER
+ 17. Parameter Settings for User Entity Instance: ALU:_ALU|mux_2:MUXALU
+ 18. Parameter Settings for User Entity Instance: mux_2:MUX_F
+ 19. Parameter Settings for User Entity Instance: mux_2:MUX_D
+ 20. Port Connectivity Checks: "register:R2"
+ 21. Port Connectivity Checks: "register:R1"
+ 22. Post-Synthesis Netlist Statistics for Top Partition
+ 23. Elapsed Time Per Partition
+ 24. Analysis & Synthesis Messages
+ 25. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri Jan 10 03:21:52 2020       ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                      ; Final                                       ;
+; Top-level Entity Name              ; Final                                       ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 3,798                                       ;
+;     Total combinational functions  ; 1,769                                       ;
+;     Dedicated logic registers      ; 2,064                                       ;
+; Total registers                    ; 2064                                        ;
+; Total pins                         ; 53                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE115F29C7      ;                    ;
+; Top-level entity name                                            ; Final              ; Final              ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.2%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                            ;
++----------------------------------+-----------------+------------------------+-------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path              ; Library ;
++----------------------------------+-----------------+------------------------+-------------------------------------------+---------+
+; Final.v                          ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.1/Final/Final.v      ;         ;
+; decoder.v                        ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.1/Final/decoder.v    ;         ;
+; mux_2.v                          ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.1/Final/mux_2.v      ;         ;
+; mux_4.v                          ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.1/Final/mux_4.v      ;         ;
+; register.v                       ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.1/Final/register.v   ;         ;
+; ALU.v                            ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.1/Final/ALU.v        ;         ;
+; arithmetic.v                     ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.1/Final/arithmetic.v ;         ;
+; adder.v                          ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.1/Final/adder.v      ;         ;
+; logic.v                          ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.1/Final/logic.v      ;         ;
+; shifter.v                        ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.1/Final/shifter.v    ;         ;
+; DMEM.v                           ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.1/Final/DMEM.v       ;         ;
+; dmem.txt                         ; yes             ; Auto-Found File        ; C:/intelFPGA_lite/18.1/Final/dmem.txt     ;         ;
++----------------------------------+-----------------+------------------------+-------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 3,798     ;
+;                                             ;           ;
+; Total combinational functions               ; 1769      ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 1700      ;
+;     -- 3 input functions                    ; 47        ;
+;     -- <=2 input functions                  ; 22        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 1760      ;
+;     -- arithmetic mode                      ; 9         ;
+;                                             ;           ;
+; Total registers                             ; 2064      ;
+;     -- Dedicated logic registers            ; 2064      ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 53        ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; CLK~input ;
+; Maximum fan-out                             ; 2064      ;
+; Total fan-out                               ; 13237     ;
+; Average fan-out                             ; 3.36      ;
++---------------------------------------------+-----------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                             ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                        ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------+-------------+--------------+
+; |Final                     ; 1769 (2)            ; 2064 (0)                  ; 0           ; 0            ; 0       ; 0         ; 53   ; 0            ; |Final                                     ; Final       ; work         ;
+;    |ALU:_ALU|              ; 43 (3)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|ALU:_ALU                            ; ALU         ; work         ;
+;       |arthimetic:Ari|     ; 24 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|ALU:_ALU|arthimetic:Ari             ; arthimetic  ; work         ;
+;          |adder:ADDER|     ; 10 (10)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|ALU:_ALU|arthimetic:Ari|adder:ADDER ; adder       ; work         ;
+;       |mux_2:MUXALU|       ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|ALU:_ALU|mux_2:MUXALU               ; mux_2       ; work         ;
+;    |DMEM:MEM|              ; 1667 (1667)         ; 2048 (2048)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|DMEM:MEM                            ; DMEM        ; work         ;
+;    |decoder:Decoder|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|decoder:Decoder                     ; decoder     ; work         ;
+;    |mux_2:MUXB|            ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|mux_2:MUXB                          ; mux_2       ; work         ;
+;    |mux_2:MUX_D|           ; 30 (30)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|mux_2:MUX_D                         ; mux_2       ; work         ;
+;    |mux_4:MUX_A|           ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|mux_4:MUX_A                         ; mux_4       ; work         ;
+;    |mux_4:MUX_B|           ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|mux_4:MUX_B                         ; mux_4       ; work         ;
+;    |register:R0|           ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|register:R0                         ; register    ; work         ;
+;    |register:R3|           ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|register:R3                         ; register    ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++----------------------------------------+----------------------------------------+
+; Register name                          ; Reason for Removal                     ;
++----------------------------------------+----------------------------------------+
+; register:R2|d[0]                       ; Stuck at GND due to stuck port data_in ;
+; register:R2|d[1]                       ; Stuck at VCC due to stuck port data_in ;
+; register:R2|d[2..7]                    ; Stuck at GND due to stuck port data_in ;
+; register:R1|d[0]                       ; Stuck at VCC due to stuck port data_in ;
+; register:R1|d[1..7]                    ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 16 ;                                        ;
++----------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 2064  ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 2064  ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Final|mux_4:MUX_A|Mux7              ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Final|mux_4:MUX_B|Mux6              ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Final|ALU:_ALU|arthimetic:Ari|Mux7  ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |Final|ALU:_ALU|mux_2:MUXALU|dout[0] ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |Final|mux_2:MUX_D|dout[1]           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:R0 ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; WIDTH          ; 8     ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:R1 ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; WIDTH          ; 8     ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:R2 ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; WIDTH          ; 8     ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:R3 ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; WIDTH          ; 8     ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux_2:MUXB ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; WIDTH          ; 8     ; Signed Integer                 ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:_ALU|arthimetic:Ari|adder:ADDER ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; WIDTH          ; 8     ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:_ALU|mux_2:MUXALU ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; WIDTH          ; 8     ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux_2:MUX_F ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; WIDTH          ; 8     ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux_2:MUX_D ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; WIDTH          ; 8     ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------+
+; Port Connectivity Checks: "register:R2"           ;
++-----------------+-------+----------+--------------+
+; Port            ; Type  ; Severity ; Details      ;
++-----------------+-------+----------+--------------+
+; load_data[7..2] ; Input ; Info     ; Stuck at GND ;
+; load_data[1]    ; Input ; Info     ; Stuck at VCC ;
+; load_data[0]    ; Input ; Info     ; Stuck at GND ;
++-----------------+-------+----------+--------------+
+
+
++---------------------------------------------------+
+; Port Connectivity Checks: "register:R1"           ;
++-----------------+-------+----------+--------------+
+; Port            ; Type  ; Severity ; Details      ;
++-----------------+-------+----------+--------------+
+; load_data[7..1] ; Input ; Info     ; Stuck at GND ;
+; load_data[0]    ; Input ; Info     ; Stuck at VCC ;
++-----------------+-------+----------+--------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 53                          ;
+; cycloneiii_ff         ; 2064                        ;
+;     ENA               ; 2064                        ;
+; cycloneiii_lcell_comb ; 1770                        ;
+;     arith             ; 9                           ;
+;         3 data inputs ; 9                           ;
+;     normal            ; 1761                        ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 20                          ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 38                          ;
+;         4 data inputs ; 1700                        ;
+;                       ;                             ;
+; Max LUT depth         ; 10.00                       ;
+; Average LUT depth     ; 7.28                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:08     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Fri Jan 10 03:21:13 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Final -c Final
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file final.v
+    Info (12023): Found entity 1: Final File: C:/intelFPGA_lite/18.1/Final/Final.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file decoder.v
+    Info (12023): Found entity 1: decoder File: C:/intelFPGA_lite/18.1/Final/decoder.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux_2.v
+    Info (12023): Found entity 1: mux_2 File: C:/intelFPGA_lite/18.1/Final/mux_2.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux_4.v
+    Info (12023): Found entity 1: mux_4 File: C:/intelFPGA_lite/18.1/Final/mux_4.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file register.v
+    Info (12023): Found entity 1: register File: C:/intelFPGA_lite/18.1/Final/register.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu.v
+    Info (12023): Found entity 1: ALU File: C:/intelFPGA_lite/18.1/Final/ALU.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file arithmetic.v
+    Info (12023): Found entity 1: arthimetic File: C:/intelFPGA_lite/18.1/Final/arithmetic.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file adder.v
+    Info (12023): Found entity 1: adder File: C:/intelFPGA_lite/18.1/Final/adder.v Line: 1
+Warning (10463): Verilog HDL Declaration warning at logic.v(1): "logic" is SystemVerilog-2005 keyword File: C:/intelFPGA_lite/18.1/Final/logic.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file logic.v
+    Info (12023): Found entity 1: logic File: C:/intelFPGA_lite/18.1/Final/logic.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file shifter.v
+    Info (12023): Found entity 1: Shifter File: C:/intelFPGA_lite/18.1/Final/shifter.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file dmem.v
+    Info (12023): Found entity 1: DMEM File: C:/intelFPGA_lite/18.1/Final/DMEM.v Line: 1
+Info (12127): Elaborating entity "Final" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at Final.v(7): object "RPL" assigned a value but never read File: C:/intelFPGA_lite/18.1/Final/Final.v Line: 7
+Warning (10036): Verilog HDL or VHDL warning at Final.v(7): object "RJB" assigned a value but never read File: C:/intelFPGA_lite/18.1/Final/Final.v Line: 7
+Warning (10036): Verilog HDL or VHDL warning at Final.v(7): object "RBC" assigned a value but never read File: C:/intelFPGA_lite/18.1/Final/Final.v Line: 7
+Info (12128): Elaborating entity "DMEM" for hierarchy "DMEM:MEM" File: C:/intelFPGA_lite/18.1/Final/Final.v Line: 60
+Warning (10850): Verilog HDL warning at DMEM.v(7): number of words (32) in memory file does not match the number of elements in the address range [0:255] File: C:/intelFPGA_lite/18.1/Final/DMEM.v Line: 7
+Warning (10175): Verilog HDL warning at DMEM.v(11): ignoring unsupported system task File: C:/intelFPGA_lite/18.1/Final/DMEM.v Line: 11
+Info (12128): Elaborating entity "decoder" for hierarchy "decoder:Decoder" File: C:/intelFPGA_lite/18.1/Final/Final.v Line: 65
+Info (12128): Elaborating entity "register" for hierarchy "register:R0" File: C:/intelFPGA_lite/18.1/Final/Final.v Line: 77
+Info (12128): Elaborating entity "mux_4" for hierarchy "mux_4:MUX_A" File: C:/intelFPGA_lite/18.1/Final/Final.v Line: 107
+Info (12128): Elaborating entity "mux_2" for hierarchy "mux_2:MUXB" File: C:/intelFPGA_lite/18.1/Final/Final.v Line: 123
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:_ALU" File: C:/intelFPGA_lite/18.1/Final/Final.v Line: 138
+Info (12128): Elaborating entity "arthimetic" for hierarchy "ALU:_ALU|arthimetic:Ari" File: C:/intelFPGA_lite/18.1/Final/ALU.v Line: 21
+Info (12128): Elaborating entity "adder" for hierarchy "ALU:_ALU|arthimetic:Ari|adder:ADDER" File: C:/intelFPGA_lite/18.1/Final/arithmetic.v Line: 70
+Info (12128): Elaborating entity "logic" for hierarchy "ALU:_ALU|logic:Log" File: C:/intelFPGA_lite/18.1/Final/ALU.v Line: 29
+Info (12128): Elaborating entity "Shifter" for hierarchy "Shifter:_Shifter" File: C:/intelFPGA_lite/18.1/Final/Final.v Line: 144
+Info (276014): Found 1 instances of uninferred RAM logic
+    Info (276007): RAM logic "DMEM:MEM|Data_memory" is uninferred due to asynchronous read logic File: C:/intelFPGA_lite/18.1/Final/DMEM.v Line: 6
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/intelFPGA_lite/18.1/Final/db/Final.ram0_DMEM_22f088.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Info (286030): Timing-Driven Synthesis is running
+Info (144001): Generated suppressed messages file C:/intelFPGA_lite/18.1/Final/output_files/Final.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 3 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "IR[2]" File: C:/intelFPGA_lite/18.1/Final/Final.v Line: 3
+    Warning (15610): No output dependent on input pin "IR[5]" File: C:/intelFPGA_lite/18.1/Final/Final.v Line: 3
+    Warning (15610): No output dependent on input pin "IR[8]" File: C:/intelFPGA_lite/18.1/Final/Final.v Line: 3
+Info (21057): Implemented 3867 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 25 input pins
+    Info (21059): Implemented 28 output pins
+    Info (21061): Implemented 3814 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
+    Info: Peak virtual memory: 4791 megabytes
+    Info: Processing ended: Fri Jan 10 03:21:53 2020
+    Info: Elapsed time: 00:00:40
+    Info: Total CPU time (on all processors): 00:00:39
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/intelFPGA_lite/18.1/Final/output_files/Final.map.smsg.
+
+
