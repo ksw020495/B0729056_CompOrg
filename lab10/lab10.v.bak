@@ -1,0 +1,9 @@
+module lab10(RW,DA,AA,BA,MB,FS,MD,ConstantIn,DataIn,AddressOut,DataOut,V,C,N,Z);
+	input RW,MB,MD;
+	input [1:0] DA,AA,BA;
+	input [3:0] FS;
+	input [7:0] DataIn,ConstantIn;
+	output [7:0] AddressOut,DataOut;
+	output V,C,N,Z;
+
+endmodule
